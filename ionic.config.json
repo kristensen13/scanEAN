@@ -1,0 +1,7 @@
+{
+  "name": "scanEAN",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
