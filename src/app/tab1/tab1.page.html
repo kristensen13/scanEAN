@@ -1,17 +1,38 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+        <ion-title class="ion-text-center">
+            Escanear Código de Barras
+        </ion-title>
     </ion-toolbar>
-  </ion-header>
+   <ion-toolbar>
+      <ion-grid class="ion-text-center">
+        <ion-row>
+            <ion-col col-12>
+                <ion-button (click)="scan()" ion-button color="light" outline type="reset">Escanear</ion-button>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+   </ion-toolbar>
+</ion-header>
+<!-- <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Tab 1</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <app-explore-container name="Tab 1 page"></app-explore-container>
+</ion-content> -->
+<ion-content>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card *ngIf="data" class="ion-text-center">
+    <ion-card-header>
+      <img [src]="this.image">
+      <ion-card-title>{{ data.Nombre | uppercase }}</ion-card-title>
+      <ion-card-subtitle>{{ this.codeStr }} {{  data.Codigo }}</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <h1>{{ data.Pvp | currency:'€ ' }}</h1>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
