@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Network } from '@ionic-native/network/ngx';
 import { AlertController } from '@ionic/angular';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',

@@ -1,0 +1,12 @@
+ion-title {
+  font-size: 1.5rem;
+}
+ion-toolbar {
+  background-color: var(--ion-color-coalimar);
+  color: azure;
+}
+
+ion-searchbar {
+  --placeholder-color: var(--ion-color-coalimar);
+  --icon-color: var(--ion-color-coalimar);
+}

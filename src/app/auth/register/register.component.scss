@@ -1,0 +1,22 @@
+ion-toolbar {
+  background-color: var(--ion-color-coalimar);
+  color: azure;
+}
+
+ion-input {
+  --color: var(--ion-color-coalimar);
+  --placeholder-color: var(--ion-color-coalimar);
+}
+
+ion-button {
+  color: #df612f;
+  font-size: 1rem;
+}
+
+a {
+  color: var(--ion-color-dark);
+}
+
+a:hover {
+  color: var(--ion-color-coalimar);
+}

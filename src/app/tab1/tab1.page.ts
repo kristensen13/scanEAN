@@ -36,7 +36,7 @@ export class Tab1Page {
   scan() {
     this.barcodeScanner.scan().then((barcodeData) => {
       this.code = barcodeData.text;
-      //console.log('Barcode data', this.code);
+      console.log('Barcode data', this.code);
       this.http
         .get(
           `https://www.coalimaronline.com/api/Articulo/PorCodigoBarras/${this.code}.`

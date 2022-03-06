@@ -14,6 +14,7 @@ import { NoimagePipe } from '../pipes/noimage.pipe';
 @NgModule({
   imports: [
     IonicModule,
+    RouterModule,
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
